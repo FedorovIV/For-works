@@ -17,11 +17,12 @@ int main() {
     while (getlin(arr[n]) != 0)
     {
         //delete_space(arr[n]);
-        putline(arr[n]);
+        //putline(arr[n]);
         n++;
     }
     for (int i = 0; i < n; i++)
-        putline(arr[n]);
+        putline(arr[i]);
+    printf("sosi");
 }
 
 int getlin(char s[100]) {
@@ -35,8 +36,8 @@ int getlin(char s[100]) {
     if (c == '\n') {
         s[len] = '\n';
         len++;
-        s[len] = '\0';
     }
+    s[len] = '\0';
     return len;
 }
 
